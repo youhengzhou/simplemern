@@ -4,9 +4,9 @@
   "description": "Simple MERN Project",
   "scripts": {
     "start": "node bend/server.js",
-    "nms": "nodemon bend/server.js",
-    "fs": "npm start --prefix fend",
-    "fb": "npm run build --prefix fend",
+    "bend": "nodemon bend/server.js",
+    "fend": "npm start --prefix fend",
+    "buildfend": "npm run build --prefix fend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
